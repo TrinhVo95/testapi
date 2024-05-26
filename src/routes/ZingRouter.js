@@ -1,48 +1,63 @@
-const express = require("express")
-const router = express.Router()
+import { Router } from "express";
+const router = Router();
 
-const ZingController = require("../controllers/ZingController")
+import {
+  getSong,
+  // getDetailPlaylist,
+  // getHome,
+  // getTop100,
+  // getChartHome,
+  // getNewReleaseChart,
+  // getInfo,
+  // getArtist,
+  // getArtistSong,
+  // getLyric,
+  // search,
+  // getListMV,
+  // getCategoryMV,
+  // getVideo,
+} from "../controllers/ZingController.js";
 
 // getSong
-router.get("/song", ZingController.getSong)
+router.get("/song", getSong);
 
 // getDetailPlaylist
-router.get("/detailplaylist", ZingController.getDetailPlaylist)
+// router.get("/detailplaylist", getDetailPlaylist);
 
-// getHome
-router.get("/home", ZingController.getHome)
+// // getHome
+// router.get("/home", getHome);
 
-// getTop100
-router.get("/top100", ZingController.getTop100)
+// // getTop100
+// router.get("/top100", getTop100);
 
-// getChartHome
-router.get("/charthome", ZingController.getChartHome)
+// // getChartHome
+// router.get("/charthome", getChartHome);
 
-// getNewReleaseChart
-router.get("/newreleasechart", ZingController.getNewReleaseChart)
+// // getNewReleaseChart
+// router.get("/newreleasechart", getNewReleaseChart);
 
-// getInfoSong
-router.get("/infosong", ZingController.getInfo)
+// // getInfoSong
+// router.get("/infosong", getInfo);
 
 // getArtist
-router.get("/artist", ZingController.getArtist)
+// router.get("/artist", getArtist);
 
 // getArtistSong
-router.get("/artistsong", ZingController.getArtistSong)
+// router.get("/artistsong", getArtistSong);
 
-// getLyric
-router.get("/lyric", ZingController.getLyric)
+// // getLyric
+// router.get("/lyric", getLyric);
 
-// search
-router.get("/search", ZingController.search)
+// // search
+// router.get("/search", search);
 
-// getListMV
-router.get("/listmv", ZingController.getListMV)
+// // getListMV
+// router.get("/listmv", getListMV);
 
-// getCategoryMV
-router.get("/categorymv", ZingController.getCategoryMV)
+// // getCategoryMV
+// router.get("/categorymv", getCategoryMV);
 
-// getVideo
-router.get("/video", ZingController.getVideo)
+// // getVideo
+// router.get("/video", getVideo);
 
-module.exports = router
+// export default router;
